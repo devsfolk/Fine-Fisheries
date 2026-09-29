@@ -119,6 +119,12 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:7
 .gal-item:hover img{transform:scale(1.06);}
 .gal-cap{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(180deg,transparent,rgba(6,15,29,.85));color:#fff;font-size:.85rem;font-weight:500;}
 
+.jute-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:960px;margin:0 auto;}
+@media(max-width:680px){.jute-grid{grid-template-columns:1fr;}}
+.jute-card{position:relative;border-radius:12px;overflow:hidden;box-shadow:0 16px 36px rgba(8,27,51,.15);background:#fff;}
+.jute-card img{width:100%;height:380px;object-fit:cover;display:block;transition:transform .5s ease;}
+.jute-card:hover img{transform:scale(1.04);}
+
 .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
 @media(max-width:860px){.loc-grid{grid-template-columns:1fr;gap:36px;}}
 .addr-card{background:var(--navy);color:#fff;border-radius:14px;padding:38px;position:relative;overflow:hidden;}
@@ -194,7 +200,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.55);border-top:1px solid r
   <div class="pagehead-bg" id="heroBg"></div>
   <div class="pagehead-overlay"></div>
   <svg class="pagehead-deco" viewBox="0 0 200 100" fill="none"><path d="M0 50 C50 90 100 10 150 50 C175 70 190 60 200 50" stroke="#2FA8E0" stroke-width="6"/></svg>
-  <div class="wrap"><p class="kicker">About us</p><h1>Built around one processing line, run with care.</h1><p>Fine Fisheries is a Karachi-based fish feed manufacturer, producing aquafeed for farms and distributors from a single dedicated facility in Deh Rehri.</p></div>
+  <div class="wrap"><p class="kicker">About us</p><h1>Built around one processing line, run with care.</h1><p>Fine Fisheries is a Karachi-based fish feed manufacturer, producing high-grade aquafeed and fish powder feed for farms and distributors. Our operations extend across the region and are not only based in Deh Rehri, processing both wet fish and dry fish to exact nutritional standards.</p></div>
 </header>
 
 <section class="section">
@@ -202,17 +208,17 @@ footer{background:var(--navy);color:rgba(255,255,255,.55);border-top:1px solid r
     <div class="reveal">
       <p class="kicker">Our story</p>
       <h2 class="h2">From raw material to a trusted feed brand.</h2>
-      <p class="sub">Fine Fisheries was set up to give local fish farms a dependable, locally produced alternative to imported feed. Every batch runs through our own rotary drying, milling, and pelletizing line, so we control quality from the raw material stage through to the packed bag.</p>
+      <p class="sub">Fine Fisheries was set up to give local fish farms a dependable, locally produced alternative to imported feed. Processing both wet fish and dry fish, every batch runs through our own rotary drying, milling, and pelletizing line — producing floating pellets as well as fish powder feed. With operations spanning beyond Deh Rehri across the region, we control quality from raw catch through to products packed in durable jute bags.</p>
       <ul class="about-points">
         <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Rotary drum drying for stable, low-moisture feed</li>
-        <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>In-house milling, mixing and pelletizing</li>
-        <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Four feed grades covering fry through to grow-out stock</li>
-        <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Bulk and bagged dispatch for farms and distributors</li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Processing both wet fish and dry fish with in-house milling &amp; pelletizing</li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Pelleted grades and fish powder feed covering fry through to grow-out stock</li>
+        <li><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Products packed in durable jute bags for farm and distributor dispatch</li>
       </ul>
       <div class="stat-row">
         <div><b>5</b><span>stages on one line</span></div>
-        <div><b>4</b><span>feed grades produced</span></div>
-        <div><b>1</b><span>facility in Karachi</span></div>
+        <div><b>5</b><span>feed grades &amp; powder</span></div>
+        <div><b>Karachi</b><span>operations beyond Deh Rehri</span></div>
         <div><b>2</b><span>storage &amp; packing halls</span></div>
       </div>
     </div>
@@ -231,8 +237,28 @@ footer{background:var(--navy);color:rgba(255,255,255,.55);border-top:1px solid r
     <div class="reveal">
       <p class="kicker">How we work</p>
       <h2 class="h2">Consistency starts with the raw material.</h2>
-      <p class="sub">Material is chipped and staged before it ever reaches the dryer, so the moisture reduction and milling stages that follow behave the same way, batch after batch. That consistency is what carries through into pellet size, texture, and shelf life.</p>
+      <p class="sub">Both wet fish and dry fish are inspected, chipped, and staged before reaching the dryer, ensuring uniform moisture reduction, milling, and fine powder formulation. That consistency carries through every pellet and powder batch, packed securely in breathable jute bags for maximum shelf life.</p>
       <p style="margin-top:24px;"><a href="gallery.html" class="btn-ghost" style="border-color:var(--line);color:var(--navy);">See the full facility</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;background:#EDF1F5;">
+  <div class="wrap">
+    <div style="text-align:center;max-width:720px;margin:0 auto 40px;" class="reveal">
+      <p class="kicker">Packaging &amp; Protection</p>
+      <h2 class="h2">Securely Packed in Jute Bags</h2>
+      <p class="sub" style="margin:0 auto;">All our feeds and fish powder are packed in tough, eco-friendly jute bags. Jute packaging allows the feed to breathe, resists tearing in transit, and preserves optimal nutritional quality from our facility to your farm.</p>
+    </div>
+    <div class="jute-grid reveal">
+      <div class="jute-card">
+        <img src="images/jute1.png" alt="Fine Fisheries fish feed packed in jute bags">
+        <div class="gal-cap">Finished feed bagged and stacked in heavy-duty jute packaging</div>
+      </div>
+      <div class="jute-card">
+        <img src="images/jute2.png" alt="Fine Fisheries jute bags ready for staging and dispatch">
+        <div class="gal-cap">Jute bags ready for warehouse staging and nationwide dispatch</div>
+      </div>
     </div>
   </div>
 </section>
